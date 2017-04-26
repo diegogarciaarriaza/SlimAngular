@@ -7,7 +7,7 @@
 	```
 	git clone https://github.com/diegogarciaarriaza/SlimAngular.git
 	cd SlimAngular
-	``
+	```
 
 * **Installation of Slim**
 
