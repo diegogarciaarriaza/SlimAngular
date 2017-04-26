@@ -1,0 +1,50 @@
+
+<div class="col-md-6 col-md-offset-3" *ngIf="hotel">
+
+  <h1>Form to add a new hotel</h1>
+
+  <div id="hotel-box">
+    <form #formHotel="ngForm" (ngSubmit)="onSubmit()">
+      <label>Name:</label>
+      <p>
+        <input type="text" name="name" #name="ngModel" ngControl="name" [(ngModel)]="hotel.name" required />
+        <span *ngIf="!name.valid">Type the name</span>
+      </p>
+      <div class="clearfix"></div>
+
+      <label>Address:</label>
+      <p>
+        <input type="text" name="address" #address="ngModel" ngControl="address" [(ngModel)]="hotel.address" required />
+        <span *ngIf="!address.valid">Type the address</span>
+      </p>
+      <div class="clearfix"></div>
+
+      <label>Description:</label>
+      <p>
+        <input type="text" name="description" #description="ngModel" ngControl="description" [(ngModel)]="hotel.description" required />
+        <span *ngIf="!description.valid">Type the description</span>
+      </p>
+      <div class="clearfix"></div>
+
+      <label>Price:</label>
+      <p>
+        <select (change)="callPrice(price.value)" #price>
+          <option value="cheap" [attr.selected]="hotel.price === 'cheap' ? 'selected' : null">Cheap</option>
+          <option value="medium" [attr.selected]="hotel.price === 'medium' ? 'selected' : null">Medium</option>
+          <option value="high" [attr.selected]="hotel.price === 'high' ? 'selected' : null">High</option>
+        </select>
+      </p>
+      <div class="clearfix"></div>
+
+      <label>Image:</label>
+      <p>
+        <input type="file" placeholder="Upload image..." (change)="fileChangeEvent($event)"/>
+      </p>
+
+      <p class="botonera">
+      <input type="submit" value="{{title}}" class="btn btn-default" [disabled]="!formHotel.form.valid"/>
+      </p>
+      <div class="clearfix"></div>
+    </form>
+  </div>
+</div>

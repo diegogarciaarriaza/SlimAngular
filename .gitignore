@@ -1,0 +1,15 @@
+# .ignore from Slim and Angular
+
+## General
+.idea/*
+
+### Angular in Frontend
+Frontend/.editorconfig
+Frontend/.idea/*
+Frontend/node_modules/*
+
+### Slim in Backend
+Backend/composer.lock
+Backend/vendor/*
+
+

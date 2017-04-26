@@ -1,0 +1,176 @@
+h1 {
+  color: #1cad45;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align: center;
+}
+
+.minavbar{
+  margin-top: 10px;
+  padding: 20px;
+  background: #1cad45;
+  -webkit-box-shadow: 0px 0px 5px 5px #ddd;
+  -moz-box-shadow: 0px 0px 5px 5px #ddd;
+  box-shadow: 0px 0px 5px 5px #ddd;
+  /*text-align: center;*/
+}
+
+.minavbar #logo{
+  width:50px;
+  display: block;
+  float: left;
+}
+
+.minavbar h1{
+  margin:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left:15px;
+  line-height:55px;
+  font-size:25px;
+  text-transform: uppercase;
+  border-bottom:1px solid white;
+  color: white;
+  float: left;
+}
+
+.minavbar .navbar-nav>.active>a, .minavbar.navbar-nav>.active>a:focus, .minavbar.navbar-nav>.active>a:hover {
+  background-color: #24a047;
+  color: whitesmoke;
+}
+
+.minavbar .navbar-nav>li>a:focus, .minavbar .navbar-nav>li>a:hover{
+  color: white;
+  background-color: transparent;
+}
+
+.minavbar .navbar-nav>li>a:hover {
+  background-color: #24a047;
+  color: whitesmoke;
+}
+
+.minavbar .navbar-nav>li>a {
+  color: ghostwhite;
+  font-size:17px;
+}
+
+.minavbar .navbar-toggle {
+  border-color: white;
+  margin:0px;
+}
+
+.minavbar .navbar-toggle .icon-bar {
+  background-color: rgb(247, 246, 246);
+}
+
+#hotels-list{
+  margin-top: 20px;
+  list-style: none;
+  padding: 0px;
+}
+
+.hotel-item, #hotel-box{
+  padding: 0px;
+  border: 1px solid #97e697;
+  -webkit-box-shadow: 1px 3px 7px 3px rgba(40, 130, 26, 0.27);
+  -moz-box-shadow: 1px 3px 7px 3px rgba(40, 130, 26, 0.27);
+  box-shadow: 1px 3px 7px 3px rgba(40, 130, 26, 0.27);
+  margin-bottom: 15px;
+}
+
+.hotel-item h4 {
+  margin: 0px;
+  line-height: 35px;
+  padding: 0px 10px;
+  background: #1cad45;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hotel-item h5 {
+  margin: 0px;
+  padding: 0px 10px;
+  line-height: 25px;
+  text-transform: uppercase;
+  background-color: rgba(28, 173, 69, 0.22);
+  color: #444141;
+}
+
+.hotel-item .imganddesc{
+  width: 100%;
+  border-top: 1px solid #ddd;
+  height: 105px;
+  float: left;
+  padding-top:0px;
+  padding-bottom:20px;
+  color: gray;
+}
+
+.hotel-item .image{
+  height: 105px;
+  width: 105px;
+  overflow: hidden;
+  background: #ddd;
+  float: left;
+  margin-left: 0px;
+}
+
+.hotel-item .image img{
+  height: 150px;
+}
+
+.hotel-item .description{
+  float: left;
+  margin-left:20px;
+}
+
+.hotel-item .description h6{
+  color: #6b5d5d;;
+}
+
+.botonera{
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid yellowgreen;
+}
+
+.botonera .btn{
+  margin: 0px 10px;
+  /*width: 90px;*/
+}
+
+.price {
+  float: right;
+  margin: 10px;
+  margin-top: 30px;
+  background-color: palegreen;
+  line-height: 40px;
+}
+
+.price span {
+  color: darkgreen;
+  padding: 25px 5px;
+  font-size: 20px;
+}
+
+#hotel-box label{
+  float: left;
+  margin: 10px;
+  font-weight: 400;
+  color: green;
+}
+
+#hotel-box input{
+  margin: 5px;
+}
+
+#hotel-box span{
+  float: left;
+  color: indianred;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#hotel-box select{
+  margin-top:10px;
+}

@@ -1,0 +1,44 @@
+<div class="loading" *ngIf="loading && loading == 'show'">
+  <img src="../../assets/images/loader.gif" />
+</div>
+
+
+
+
+<div class="col-md-6 col-md-offset-3" *ngIf="hotel">
+
+  <h1>{{hotel.name}}</h1>
+
+    <div class="hotel-item">
+
+      <h4>{{hotel.name}}</h4>
+      <h5>{{hotel.address}}</h5>
+      <div class="imganddesc">
+        <div class="image">
+          <img src="http://localhost/uploads/{{hotel.image}}" *ngIf="hotel.image && hotel.image !== 'NULL'" />
+        </div>
+        <div class="description">
+          <h6>{{hotel.description}}</h6>
+        </div>
+        <div class="price">
+          <span [ngSwitch]="hotel.price">
+            <span *ngSwitchCase="'cheap'">Cheap</span>
+            <span *ngSwitchCase="'medium'">Medium</span>
+            <span *ngSwitchCase="'high'">High</span>
+            <span *ngSwitchDefault>Medium</span>
+          </span>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="botonera">
+        <a routerLink="/edit-hotel/{{hotel.id}}" class="btn btn-warning">Edit</a>
+        <a (click)="onDeleteConfirm(hotel.id)" class="btn btn-danger">Delete</a>
+      </div>
+      <div class="botonera" *ngIf="confirm == hotel.id">
+        <a (click)="onDeleteHotel(hotel.id)" class="btn btn-danger">Delete</a>
+        <a (click)="onCancelConfirm(hotel.id)" class="btn btn-default">Cancel</a>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+</div>
